@@ -30,7 +30,7 @@
   /* styles à appliquer si la condition est vraie */
 }
 ```
-### Exemple concrèt
+### Exemple concrêt
 > Dans cet exemple concrèt, nous avons une section avec une grille, nous voulons que sur PC il y ai 4 colonnes, sur tablette qu'il y en ai 2, et que sur mobile il n'y ai qu'une seule colonne.
 > 
 > **⚠️ INUTILE de recopier tout les paramètres dans les media queries, copier uniquement les paramètres que vous voulez changer ⚠️**
