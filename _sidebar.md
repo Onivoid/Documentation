@@ -1,4 +1,5 @@
 <!-- docs/_sidebar.md -->
 * [**Accueil**](/)
 * [**Les Chemins de fichiers**](/content/path/)
-* [**Flexbox**](/content/flex/)
+* [**Flexbox CSS**](/content/flex/)
+* [**Grid CSS**](/content/grid/)

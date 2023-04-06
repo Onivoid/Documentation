@@ -11,65 +11,16 @@
 * `align-items: stretch | flex-start | flex-end | center | baseline;` : Définit l'alignement vertical des éléments enfants, soit en les étirant pour remplir toute la hauteur (stretch), en les alignant en haut (flex-start), en bas (flex-end), au centre (center), ou en alignant leurs baselines (baseline).
 * `align-content: stretch | flex-start | flex-end | center | space-between | space-around;` : Définit l'alignement vertical des éléments enfants sur plusieurs lignes, soit en les étirant pour remplir toute la hauteur (stretch), en les alignant en haut (flex-start), en bas (flex-end), au centre (center), en les espaçant de manière égale entre eux (space-between), ou en les espaçant avec un espace supplémentaire en haut et en bas (space-around).
 
-### Exemples d'applications : 
+## Exemples d'applications : 
 
+### Application N°1 de Flexbox
 > Nous avons une section et nous voulons centrer son contenu verticalement et horizontalement : 
-```html
-<section> <!-- Parent -->
-    <h1>Titre de la section</h1>
-    <img src="#" alt="logo" /> <!-- Enfants -->
-    <h2>sous-titre</h2>
-<section>
-```
-```css
-section {
-    display: flex;
-    flex-direction: column; /* Nous somme obligé car flex est horizontal de base */
-    justify-content: center;
-    align-items: center;
-}
-section h1 { /*  Le CSS du h1  */}
-section img { /*  Le CSS du img  */}
-section h2 { /*  Le CSS du h2  */}
-```
+<iframe width="100%" height="500" src="//jsfiddle.net/Skullyfox/jbhuz8r7/4/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 Comme on le voit, pour centrer le contenu de la section **(enfants)** on applique le flex sur la section **(parents)**.
 
-> Nous avons une grille avec plusieurs blocs à l'intérieur, et nous voulons organiser le contenu des blocs, nous voulons centrer celui-ci horizontalement et espacer les blocs entre eux sur l'axe vertical
+### Application N°2 de Flexbox
 
-```html
-<section>
-    <div class="item">  <!-- Parent -->
-        <h1>Titre de la section</h1>
-        <img src="#" alt="logo" />  <!-- Enfants -->
-        <h2>sous-titre</h2>
-    </div>
-    <div class="item">  <!-- Parent -->
-        <h1>Titre de la section</h1>
-        <img src="#" alt="logo" />  <!-- Enfants -->
-        <h2>sous-titre</h2>
-    </div>
-    <div class="item">  <!-- Parent -->
-        <h1>Titre de la section</h1>
-        <img src="#" alt="logo" />  <!-- Enfants -->
-        <h2>sous-titre</h2>
-    </div>
-    <div class="item">  <!-- Parent -->
-        <h1>Titre de la section</h1>
-        <img src="#" alt="logo" />  <!-- Enfants -->
-        <h2>sous-titre</h2>
-    </div>
-<section>
-```
-```css
-    section {/*  CSS de la section  */}
-    section .item {
-        display: flex;
-        flex-direction: column; /* Nous somme obligé car flex est horizontal de base */
-        justify-content: space-between;
-        align-items: center;
-    }
-    section .item h1{/*  CSS du h1  */}
-    section .item img{/*  CSS du img  */}
-    section .item h2{/*  CSS du h2 */}
-```
+> Nous avons une grille avec plusieurs blocs à l'intérieur, et nous voulons organiser le contenu des blocs, nous voulons centrer celui-ci horizontalement et espacer les blocs entre eux sur l'axe vertical
+> 
+<iframe width="100%" height="650" src="//jsfiddle.net/Skullyfox/b4efcknm/25/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
